@@ -18,7 +18,7 @@ const Post = props => {
     <Article>
       <PostHeader title={title} subTitle={subTitle} date={date} />
       <Content html={html} />
-      <PostFooter author={author} post={post} slug={slug} facebook={facebook} />
+      <PostFooter author={author} post={post} slug={slug} />
     </Article>
   );
 };
@@ -27,7 +27,6 @@ Post.propTypes = {
   post: PropTypes.object.isRequired,
   author: PropTypes.object.isRequired,
   slug: PropTypes.string.isRequired,
-  facebook: PropTypes.object.isRequired
 };
 
 export default Post;
