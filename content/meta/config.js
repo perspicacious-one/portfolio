@@ -12,8 +12,8 @@ module.exports = {
   authorName: "greg lobinski",
   authorTwitterAccount: "",
   // info
-  infoTitle: "",
-  infoTitleNote: "",
+  infoTitle: "Nelson Craig",
+  infoTitleNote: "Portfolio Site",
   // manifest.json
   manifestName: "",
   manifestShortName: "ncportfolio", // max 12 characters
@@ -25,9 +25,8 @@ module.exports = {
   contactEmail: "nelson@ndcraig.com",
   // social
   authorSocialLinks: [
-    { name: "github", url: "https://github.com/" },
-    { name: "twitter", url: "https://twitter.com/" },
-    { name: "facebook", url: "http://facebook.com/" }
+    { name: "github", url: "https://github.com/perspicacious-one" },
+    { name: "linkedIn", url: "https://linkedin.com/in/nelson-craig/" },
   ]
 };
 

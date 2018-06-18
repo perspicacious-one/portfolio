@@ -25,7 +25,7 @@ const styles = theme => ({
     "& h3": {
       fontSize: "1.1em",
       color: theme.navigator.colors.postsHeader,
-      fontWeight: 600,
+      fontWeight: 500,
       margin: "-.2em 0 0 0",
       textTransform: "uppercase",
       "& small": {
@@ -84,7 +84,7 @@ const ListHeader = props => {
     <header>
       {navigatorShape === "closed" && (
         <div className={classes.closed}>
-          <h3>List of posts</h3>
+          <h3>List of Projects</h3>
           <IconButton
             aria-label="Expand the list"
             className={classes.expand}
@@ -95,7 +95,7 @@ const ListHeader = props => {
           </IconButton>
         </div>
       )}
-      {navigatorShape === "open" &&
+      {/* {navigatorShape === "open" &&
         categoryFilter !== "all posts" && (
           <div className={classes.filter}>
             <small>Active category filter:</small> <strong>{categoryFilter}</strong>
@@ -108,7 +108,7 @@ const ListHeader = props => {
               <CloseIcon />
             </IconButton>
           </div>
-        )}
+        )} */}
     </header>
   );
 };

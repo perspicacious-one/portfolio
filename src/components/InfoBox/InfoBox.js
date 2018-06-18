@@ -26,15 +26,6 @@ const styles = theme => ({
       width: `${theme.info.sizes.width}px`,
       height: "100%",
       padding: "20px 40px",
-      "&::after": {
-        content: `""`,
-        position: "absolute",
-        right: 0,
-        top: "20px",
-        bottom: "20px",
-        width: "1px",
-        borderRight: `1px solid ${theme.base.colors.lines}`
-      }
     }
   },
   wrapper: {
@@ -83,7 +74,6 @@ class InfoBox extends React.Component {
         )}
         <div className={classes.wrapper}>
           {info && <InfoText info={info} />}
-          <SocialIcons />
           {pages && <InfoMenu pages={pages} linkOnClick={this.menulinkOnClick} />}
           <StackIcons />
         </div>

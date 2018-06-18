@@ -1,37 +1,15 @@
 ---
 title: About
+menuTitle: About Me
 ---
 
-This is a demo site of the [PersonalBlog](https://github.com/greglobinski/gatsby-starter-personal-blog) GatsbyJS starter.
+#### Currently...
+I am a Full Stack Developer, former Product Manager, and forever dog person. I currently live in the Greater Seattle Area. 
 
-The starter is a ready to use, easy to customize 'like theme' starter. It has everything what blog should have and some more.
+![map](map.png)
 
-### Standard features:
+#### How I got here...
+I had the privilege of working on development projects in a variety of capacities before dedicating myself to being a developer. 
 
-* Easy editable content in **Markdown** files (posts, pages and parts)
-* **SEO** (sitemap generation, robot.txt, meta and OpenGraph Tags)
-* **Social** sharing (Twitter, Facebook, Google, LinkedIn)
-* **Comments** (Facebook)
-* **Images** lazy loading and `webp` support (gatsby-image)
-* Post **categories** (post list filtering)
-* Full text **searching** (Algolia)
-* **Contact** form (Netlify form handling)
-* **RSS** feed
-* **PWA** (manifes.json, offline support, favicons)
-* Google **Analytics**
-* **Favicons** generator (node script)
-* **Material UI** (@next)
-
-### Advanced features:
-
-* Easy customizable base **styles** via `theme` object (fonts, colors, sizes)
-* **Components** lazy loading (social sharing, comments)
-* **ESLint** (google config)
-* **Prettier** code styling
-* Custom webpack `CommonsChunkPlugin` settings
-* Webpack `BundleAnalyzerPlugin`
-* Contact **form validation** (react-material-ui-form-validator)
-
-## Instructions
-
-For detailed instructions go to [Front-end web development with Greg](https://dev.greglobinski.com/gatsby-starter-personal-blog/).
+#### Why I do things...
+I am passionate about building useful, intuitive, and generally awesome things. My goal is to make apps that reinvent old practices and standards, and benefit the user.

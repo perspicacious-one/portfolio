@@ -3,10 +3,11 @@ import PropTypes from "prop-types";
 import injectSheet from "react-jss";
 import Link from "gatsby-link";
 import IconButton from "material-ui/IconButton";
+import Button from 'material-ui/Button';
 
 import ExpandMoreIcon from "material-ui-icons/ExpandMore";
 
-import avatar from "../../images/jpg/avatar.jpg";
+import avatar from "../../images/jpg/avatar.png";
 import config from "../../../content/meta/config";
 
 const styles = theme => ({
@@ -42,7 +43,7 @@ const styles = theme => ({
   avatar: {
     width: "36px",
     height: "36px",
-    borderRadius: "65% 75%",
+    borderRadius: "10% 10%",
     border: "1px solid #ddd",
     transition: "all .3s",
     transitionTimingFunction: "ease",
@@ -61,7 +62,7 @@ const styles = theme => ({
     },
     "@media (hover: hover)": {
       "&:hover": {
-        borderRadius: "75% 65%"
+        border: `2px solid ${theme.base.colors.accent}`
       }
     }
   },
@@ -99,10 +100,17 @@ const styles = theme => ({
     top: "30px",
     right: "-25px",
     display: "none",
-    color: theme.info.colors.text,
+    padding: '6px',
+    zIndex: 2,
+    backgroundColor: theme.bars.colors.background,
     ".is-aside.open &": {
       display: "block"
     }
+  },
+  icon: {
+    color: theme.bars.colors.knockout,
+    fontSize: 36,
+    marginTop: 6
   }
 });
 
@@ -120,14 +128,15 @@ const InfoHeader = props => {
         {config.infoTitle.replace(/ /g, "\u00a0")}
         <small>{config.infoTitleNote}</small>
       </h1>
-      <IconButton
+      <Button
+        variant="fab"
         aria-label="Expand the box"
         className={classes.expand}
         onClick={expandOnClick}
         title="Expand the box"
       >
-        <ExpandMoreIcon />
-      </IconButton>
+        <ExpandMoreIcon className={classes.icon}/>
+      </Button>
     </header>
   );
 };

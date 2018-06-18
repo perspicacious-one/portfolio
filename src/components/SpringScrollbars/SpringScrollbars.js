@@ -32,9 +32,9 @@ class SpringScrollbars extends Component {
   componentWillUnmount() {
     this.springSystem.deregisterSpring(this.spring);
     this.springSystem.removeAllListeners();
-    this.springSystem = undefined;
+    // this.springSystem = undefined;
     this.spring.destroy();
-    this.spring = undefined;
+    // this.spring = undefined;
   }
 
   getScrollTop() {

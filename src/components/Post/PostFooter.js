@@ -29,7 +29,6 @@ const PostFooter = ({ classes, author, post, slug }) => {
   return (
     <footer className={classes.footer}>
       <PostShare post={post} slug={slug} />
-      <PostAuthor author={author} />
     </footer>
   );
 };

@@ -10,6 +10,7 @@ const styles = theme => ({
     left: 0,
     bottom: 0,
     width: "100%",
+    padding: 5,
     animationName: "main-entry",
     animationDuration: ".5s",
     [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {

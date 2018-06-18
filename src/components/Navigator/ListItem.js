@@ -26,21 +26,16 @@ const styles = theme => ({
     padding: ".7em 1em .7em 1em",
     color: theme.navigator.colors.postsListItemLink,
     "@media (hover: hover)": {
-      "&:hover": {
-        color: theme.navigator.colors.postsListItemLinkHover,
-        "& .pointer": {
-          borderRadius: "65% 75%"
-        }
-      }
+      "&:hover": {}
     }
   },
   listItemPointer: {
     position: "relative",
     flexShrink: 0,
     overflow: "hidden",
-    borderRadius: "75% 65%",
-    width: "60px",
-    height: "60px",
+    borderRadius: "10%",
+    width: "80px",
+    height: "80px",
     margin: "0",
     transition: "all .5s",
     "& img": {
@@ -49,13 +44,13 @@ const styles = theme => ({
     },
     [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
       marginRight: ".5em",
-      width: "80px",
-      height: "80px"
+      width: "90px",
+      height: "90px"
     },
     [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
-      marginRight: ".8em",
-      width: "90px",
-      height: "90px",
+      marginRight: ".6em",
+      width: "100px",
+      height: "100px",
       transition: "all .3s",
       transitionTimingFunction: "ease",
       ".moving-featured &, .is-aside &": {
@@ -72,7 +67,7 @@ const styles = theme => ({
     width: "100%",
     "& h1": {
       lineHeight: 1.15,
-      fontWeight: 600,
+      fontWeight: 500,
       letterSpacing: "-0.03em",
       margin: 0,
       fontSize: `${theme.navigator.sizes.postsListItemH1Font}em`,

@@ -5,29 +5,35 @@ import injectSheet from "react-jss";
 import config from "../../../content/meta/config";
 
 import { ReactComponent as GithubIcon } from "../../images/svg-icons/github.svg";
-import { ReactComponent as FacebookIcon } from "../../images/svg-icons/facebook.svg";
-import { ReactComponent as TwitterIcon } from "../../images/svg-icons/twitter.svg";
+import { ReactComponent as linkedinIcon } from "../../images/svg-icons/linkedin.svg";
 
 const styles = theme => ({
   social: {
+    marginBottom: theme.base.sizes.linesMargin,
     display: "flex",
     justifyContent: "center",
-    flexWrap: "wrap"
+    flexWrap: "wrap",
   },
   link: {
     display: "inline-block",
     padding: "5px",
     "&:hover": {
       "& svg": {
-        fill: theme.info.colors.socialIconsHover
+        fill: theme.bars.colors.icon
       }
     }
   },
   svg: {
     width: "40px",
     height: "40px",
-    fill: theme.info.colors.socialIcons,
+    fill: theme.bars.colors.icon,
     transition: "all .5s"
+  },
+  divider: {
+    width: "65%",
+    border: '0',
+    borderTop: `1px solid ${theme.bars.colors.icon}`,
+    opacity: '.4',
   }
 });
 
@@ -35,13 +41,13 @@ const Socialcons = props => {
   const { classes } = props;
   const items = config.authorSocialLinks;
   const icons = {
-    twitter: TwitterIcon,
-    facebook: FacebookIcon,
+    linkedIn: linkedinIcon,
     github: GithubIcon
   };
 
   return (
     <div className={classes.social}>
+      <hr className={classes.divider}/>
       {items.map(item => {
         const Icon = icons[item.name];
         return (
