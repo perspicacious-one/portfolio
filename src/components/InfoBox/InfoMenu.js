@@ -11,16 +11,24 @@ const styles = theme => ({
     listStyle: "none",
     margin: 0,
     width: "100%",
-    paddingTop: "3em",
+		paddingTop: "4em",
   },
   link: {
     padding: ".5em",
-    fontWeight: 400,
+		fontWeight: 500,
+		width: 100,
+		textAlign: "center",
     fontTransform: "lowercase",
-    color: theme.info.colors.menuLink,
+		color: theme.info.colors.menuLink,
+		"&:first-child": {
+			borderBottom: `1px solid rgba(66, 66, 66, .3)`,
+		},
+		"&:last-child": {
+			borderTop: `1px solid rgba(66, 66, 66, .3)`,
+    },
     "&:hover": {
       color: theme.info.colors.menuLinkHover
-    }
+		},
   }
 });
 

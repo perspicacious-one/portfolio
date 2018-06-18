@@ -13,7 +13,7 @@ const styles = theme => ({
     transform: "translate3d(0, 0, 0)",
     willChange: "left, top, bottom, width",
     background: theme.navigator.colors.background,
-    boxShadow: "0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)",
+		borderTop: `1px solid ${theme.base.colors.lines}`,
     position: "absolute",
     top: 0,
     left: 0,

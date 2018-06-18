@@ -26,7 +26,8 @@ const styles = theme => ({
       top: 0,
       width: `${theme.info.sizes.width}px`,
       height: "100%",
-      padding: "20px 40px",
+			padding: "20px 40px",
+			boxShadow: "0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12)",
     }
   },
   wrapper: {
@@ -35,7 +36,7 @@ const styles = theme => ({
     bottom: 0,
     left: 0,
     width: "100%",
-    padding: "0 40px 0",
+		padding: "0 40px 0",
     willChange: "opacity, bottom",
     transition: "bottom .5s 0s",
 		opacity: 1,

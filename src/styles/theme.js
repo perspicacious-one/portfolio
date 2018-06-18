@@ -12,7 +12,7 @@ const theme = createMuiTheme({
         .lighten(0.1)
         .string(),
       accent: colors.accent,
-      lines: colors.gray,
+      lines: colors.lightGray,
     },
     sizes: {
       linesMargin: "20px"
@@ -20,7 +20,7 @@ const theme = createMuiTheme({
     fonts: {
       unstyledFamily: `Arial`,
       styledFamily: "Ubuntu",
-      styledFonts: "300,400,600"
+      styledFonts: "300,400,500"
     }
   },
   info: {
@@ -30,7 +30,7 @@ const theme = createMuiTheme({
       socialIcons: colors.lightGray,
       socialIconsHover: colors.accent,
       menuLink: colors.gray,
-      menuLinkHover: colors.accent
+      menuLinkHover: colors.bright
     },
     sizes: {
       width: 320,
