@@ -15,7 +15,7 @@ const styles = theme => ({
   },
   link: {
     padding: ".5em",
-		fontWeight: 500,
+		fontWeight: 400,
 		width: 100,
 		textAlign: "center",
     fontTransform: "lowercase",

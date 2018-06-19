@@ -3,7 +3,7 @@ title: My Resume
 menuTitle: My Resume
 ---
 
-[Download the full pdf](https://www.dropbox.com/s/rn97kck1v1rx0mq/Resume-2018.pdf?dl=0)
+[Download the full pdf](https://www.dropbox.com/s/vkdl9hw0vbmuxnr/resume-2018-rev.pdf?dl=0)
 
 
 ### Technical Skills

@@ -60,7 +60,7 @@ const styles = theme => ({
     }
   },
   button: {
-    color: theme.bars.colors.icon
+    color: theme.bars.colors.knockout
   }
 });
 
