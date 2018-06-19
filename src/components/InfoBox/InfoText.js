@@ -15,7 +15,7 @@ const styles = theme => ({
     },
     "& p:last-child": {
       marginBottom: 0
-    }
+		},
   }
 });
 

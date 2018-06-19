@@ -24,17 +24,40 @@ const styles = theme => ({
     }
   },
   svg: {
-    width: "40px",
-    height: "40px",
-    fill: theme.bars.colors.icon,
-    transition: "all .5s"
+    width: "38px",
+    height: "38px",
+    fill: theme.bars.colors.knockout,
+		transition: "all .5s",
+		[`@media (max-width: ${theme.mediaQueryTresholds.M}px)`]: {
+			width: "30px",
+			height: "30px",
+			marginTop: 20
+		},
+		[`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
+			width: "30px",
+			height: "30px",
+			marginTop: 20
+		},
+		[`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
+			width: "32x",
+			height: "32px",
+			marginTop: 5
+    },
   },
   divider: {
     width: "65%",
     border: '0',
     borderTop: `1px solid ${theme.bars.colors.icon}`,
-    opacity: '.4',
-  }
+		opacity: '.4',
+		display: 'block',
+		[`@media (max-width: ${theme.mediaQueryTresholds.M}px)`]: {
+      display: "none"
+		},
+		[`@media (max-width: ${theme.mediaQueryTresholds.L}px)`]: {
+      display: "none"
+    },
+	}
+	
 });
 
 const Socialcons = props => {

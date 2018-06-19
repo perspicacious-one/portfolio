@@ -41,7 +41,11 @@ const styles = theme => ({
       display: "block",
       fontSize: ".65em",
       margin: "2px 0 0 0"
-    }
+		},	
+		[`@media (max-width: ${theme.mediaQueryTresholds.L}px)`]: {
+			color: theme.bars.colors.knockout,
+			fontWeight: 400
+    },
   },
   avatarLink: {
     display: "block",
