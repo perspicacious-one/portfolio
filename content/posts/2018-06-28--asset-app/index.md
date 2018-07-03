@@ -18,12 +18,12 @@ I decided to use GraphCMS due to my time constraints, and the fact that they off
 
 For the front end I used React.js, Apollo for client side queries, Material-UI, and rechart for the home page visualizations. The primary component was a table component that queried a limited data set for fast loading:
 
-![Interface](charts.webp)
+![Interface](graphs.gif)
 
 
 When a row was clicked, a more detailed query ran to populate the drawer form and relationships. From here the user could add links to related data. In this case, employees that were queried after the parent componet rendered. This allowed for quick response times, and the client looks for query information from the cache first to help keep the server requests down.
 
-![Add Relative](open-form.webp)
+![Add Relative](form.gif)
 
 
 ### What's Left
